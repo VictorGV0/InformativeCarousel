@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUSTOM CAROUSEL</title>
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<!-- Carousel -->
+<div id="customCarousel" class="carousel slide carousel1" data-bs-ride="carousel" data-bs-interval="2000">
+            
+            
+    <div class="carousel-inner w-75 h-100">
+      <div class="carousel-indicators">
+          <button type="button" id="B1" data-bs-target="#customCarousel" data-bs-slide-to="0" class=" active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" id="B2" data-bs-target="#customCarousel"  data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" id="B3" data-bs-target="#customCarousel"  data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" id="B4" data-bs-target="#customCarousel"  data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" id="B5" data-bs-target="#customCarousel"  data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" id="B6" data-bs-target="#customCarousel"  data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" id="B7" data-bs-target="#customCarousel"  data-bs-slide-to="6" aria-label="Slide 7"></button>
+        </div>
+        <a id="linkImg" target="_blank">
+          <div class="carousel-item active ">
+              <img src="assets/img/news1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+              <img src="assets/img/news2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/news3.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/news4.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/news5.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="assets/img/news6.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/news7.jpg" class="d-block w-100" alt="...">
+        </div>
+      </a>
+      <button class="carousel-control carousel-control-prev" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control carousel-control-next" type="button" data-bs-target="#customCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      
+    </div>
+    
+    <div class="NewsPanel bg-dark text-white p-4 w-25 h-100" id="NewsPanel">
+          <li><a type="button" id="T1"  data-bs-target="#customCarousel"  data-bs-slide-to="0" class="textPanel active" aria-current="true" aria-label="Slide 1">Articulo 1</a></li>
+          <li><a type="button" id="T2"  data-bs-target="#customCarousel"  data-bs-slide-to="1" class="textPanel" aria-label="Slide 2">Articulo 2</a></li>
+          <li><a type="button" id="T3"  data-bs-target="#customCarousel"  data-bs-slide-to="2" class="textPanel" aria-label="Slide 3">Articulo 3</a></li>
+          <li><a type="button" id="T4"  data-bs-target="#customCarousel"  data-bs-slide-to="3" class="textPanel" aria-label="Slide 4">Articulo 4</a></li>
+          <li><a type="button" id="T5"  data-bs-target="#customCarousel"  data-bs-slide-to="4" class="textPanel" aria-label="Slide 5">Articulo 5</a></li>
+          <li><a type="button" id="T6"  data-bs-target="#customCarousel"  data-bs-slide-to="5" class="textPanel" aria-label="Slide 6">Articulo 6</a></li>
+          <li><a type="button" id="T7"  data-bs-target="#customCarousel"  data-bs-slide-to="6" class="textPanel" aria-label="Slide 7">Articulo 7</a></li>
+      </div>
+      <div class="infoPanel bg-dark px-5 py-3 w-75" >
+          <a class="text" id="TitleInfoPanel" target="_blank"><h3 class="d-block" id="titlelInk"></h3></a>
+          <p class="text-white" id="TextContent"></p>
+      </div>
+</div>
+
+
+    <script src="assets/jquery-3.6.0.min.js"></script>
+    <script src="assets/bootstrap.bundle.min.js"></script>
+    <script src="assets/app.js"></script>
+</body>
+</html>

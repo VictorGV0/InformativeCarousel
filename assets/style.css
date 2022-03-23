@@ -1,0 +1,137 @@
+* {
+    font: Roboto;
+    /* transition: all 0.3s ease; */
+
+}
+
+.text,.textPanel {
+    color: aliceblue;
+    text-decoration: none;
+}
+.text:hover,.textPanel:hover {
+    color: rgb(240, 240, 166);    
+}
+.active {
+    text-decoration: underline;
+    color: rgb(240, 240, 166);  
+}
+
+
+/* Carousel */
+
+.carousel-control,.carousel-indicators{
+    z-index: 3;
+}
+
+.carousel1{
+    
+    padding-right: 0;
+    height: auto;
+    max-width: 1400px;
+    margin: auto;   
+}
+
+.NewsPanel {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+    
+
+.infoPanel{
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    opacity: 0;
+
+}
+
+.infoPanel.hover{
+    animation: show 0.5s forwards;
+}
+
+.infoPanel p{
+    margin-bottom: 30px;
+}
+.navbar-toggler,#navbarNav {
+    visibility:hidden;
+    
+}
+.navbar-brand{
+    position: absolute;
+    
+    
+}
+
+
+/* animation */
+
+
+ @keyframes show {
+    0% {
+      opacity: 0;
+    }
+    100% {
+        opacity: .79;
+    }
+  }
+@media screen and (max-width: 540px) {
+    .infoPanel{
+        padding-left: 10px !important;
+    }
+    .infoPanel p{
+        margin-bottom: 12px;
+    }
+    .carousel1{
+        font-size: 12px;
+    }
+    #TitleInfoPanel h3 {
+        font-size: 20px;
+    }
+    .carousel-indicators [data-bs-target]{
+        width: 15px;
+        border-bottom: 0px;
+    }
+
+} 
+@media screen and (max-width: 407px) {
+    .NewsPanel{
+        padding-top: 10px !important;
+    }
+    
+    .carousel1{
+        font-size: 10px;
+    }
+    #TitleInfoPanel h3 {
+        font-size: 16px;
+    }
+    .carousel-indicators [data-bs-target]{
+        width: 10px;
+    }
+
+}
+@media screen and (max-width: 355px) {
+    .NewsPanel{
+        display: none;
+    }
+    .infoPanel{
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        width: 100% !important;
+    }
+    .infoPanel p{
+        margin-bottom: 20px;
+    }
+    .carousel-inner{
+        width: 100% !important;
+    }
+    #TitleInfoPanel h3 {
+        font-size: 12px;
+    }
+    .carousel-indicators {
+        margin-bottom: 7px;
+    }
+
+}
+
+  
